@@ -1,5 +1,7 @@
+
 buildscript {
     ext.kotlin_version = '1.2.31'
+
 
     repositories {
         mavenCentral()
@@ -11,13 +13,15 @@ buildscript {
 
 plugins {
     id 'java'
+    id 'java-gradle-plugin'
+    id 'com.gradle.plugin-publish' version '0.10.0'
 }
 
 group 'RightMeshSupport'
 version '0.1.0'
 
 apply plugin: 'kotlin'
-apply plugin : 'com.rightmesh.support'
+apply plugin : 'org.rightmesh.support'
 
 sourceCompatibility = 1.8
 
@@ -35,4 +39,18 @@ compileKotlin {
 }
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+pluginBundle {
+    website = 'https://www.rightmesh.io/'
+    vcsUrl = 'https://github.com/azimgoogle/rightmeshsupport'
+    plugins {
+        rightMeshSupportPlugin {
+            id = 'org.rightmesh.support'
+            displayName = 'rightmesh-support'
+            description = 'To support rightmesh library credentials for supporting framework'
+            tags = ['rightmesh', 'plugin']
+            version = '0.1.0'
+        }
+    }
 }
