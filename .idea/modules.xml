@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildSrc_main.iml" filepath="$PROJECT_DIR$/.idea/modules/buildSrc_main.iml" group="buildSrc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildSrc_test.iml" filepath="$PROJECT_DIR$/.idea/modules/buildSrc_test.iml" group="buildSrc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.rightmesh_main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.rightmesh_main.iml" group="com.rightmesh" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.rightmesh_test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.rightmesh_test.iml" group="com.rightmesh" />
+    </modules>
+  </component>
+</project>
